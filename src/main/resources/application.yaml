@@ -3,4 +3,4 @@ spring:
     name: client-api
 
   profiles:
-    active: cer
+    active: dev
