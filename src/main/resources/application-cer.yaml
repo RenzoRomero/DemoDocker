@@ -6,15 +6,15 @@ spring:
     password: ${MYSQL_PASSWORD}
 
   mongodb:
-    uri: mongodb+srv://romeropajuelorenzo_db_user:RPCQUKkeEcrCajTP@cluster0.eefnkxi.mongodb.net/?appName=Cluster0
+    uri: mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@cluster0.eefnkxi.mongodb.net/?appName=Cluster0
     database: client-api-auditoria
 
   data:
     redis:
       host: redis-18216.c56.east-us.azure.cloud.redislabs.com
       port: 18216
-      username: default
-      password: q1P50WMTa9JSpEQtm3MSgDcEnTOrYzZU
+      username: ${REDIS_USERNAME}
+      password: ${REDIS_PASSWORD}
 
   h2:
     console:
