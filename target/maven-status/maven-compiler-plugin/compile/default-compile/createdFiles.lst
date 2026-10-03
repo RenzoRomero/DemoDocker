@@ -1,0 +1,10 @@
+com/tecylab/client_api/model/Status.class
+com/tecylab/client_api/model/Client$ClientBuilder.class
+com/tecylab/client_api/model/Client.class
+com/tecylab/client_api/dto/ClientRequest.class
+com/tecylab/client_api/dto/ClientResponse.class
+com/tecylab/client_api/service/ClientService.class
+com/tecylab/client_api/ClientApiApplication.class
+com/tecylab/client_api/repository/ClientRepository.class
+com/tecylab/client_api/controller/ClientController.class
+com/tecylab/client_api/config/RedisConfig.class

@@ -1,0 +1,9 @@
+/Users/renzoromeropajuelo/Downloads/DemoDocker/src/main/java/com/tecylab/client_api/ClientApiApplication.java
+/Users/renzoromeropajuelo/Downloads/DemoDocker/src/main/java/com/tecylab/client_api/config/RedisConfig.java
+/Users/renzoromeropajuelo/Downloads/DemoDocker/src/main/java/com/tecylab/client_api/controller/ClientController.java
+/Users/renzoromeropajuelo/Downloads/DemoDocker/src/main/java/com/tecylab/client_api/dto/ClientRequest.java
+/Users/renzoromeropajuelo/Downloads/DemoDocker/src/main/java/com/tecylab/client_api/dto/ClientResponse.java
+/Users/renzoromeropajuelo/Downloads/DemoDocker/src/main/java/com/tecylab/client_api/model/Client.java
+/Users/renzoromeropajuelo/Downloads/DemoDocker/src/main/java/com/tecylab/client_api/model/Status.java
+/Users/renzoromeropajuelo/Downloads/DemoDocker/src/main/java/com/tecylab/client_api/repository/ClientRepository.java
+/Users/renzoromeropajuelo/Downloads/DemoDocker/src/main/java/com/tecylab/client_api/service/ClientService.java

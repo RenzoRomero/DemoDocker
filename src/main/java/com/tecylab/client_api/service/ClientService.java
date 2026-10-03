@@ -23,6 +23,7 @@ public class ClientService {
         this.clientRepository = clientRepository;
     }
 
+
     @CacheEvict(value = "clients", key = "'allClients'")
     public ClientResponse createClient(ClientRequest clientRequest) {
         Client client = Client.builder()
