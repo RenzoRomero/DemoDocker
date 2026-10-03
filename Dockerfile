@@ -1,4 +1,19 @@
-FROM ubuntu:latest
-LABEL authors="renzoromeropajuelo"
+# Multi-stage Dockerfile for the ConfigServer Spring Boot app (Java 25)
 
-ENTRYPOINT ["top", "-b"]
+# Build stage: compile with Maven + Temurin JDK 25
+FROM eclipse-temurin:25 AS build
+WORKDIR /workspace
+COPY . .
+RUN ./mvnw clean package -DskipTests
+
+# Runtime stage: lightweight Temurin JRE 25
+FROM eclipse-temurin:25-jre AS runtime
+WORKDIR /app
+# Copy the built Spring Boot fat jar from the build stage
+COPY --from=build /workspace/target/*.jar /app/app.jar
+# Expose configured server port
+EXPOSE 8080
+# Allow passing JVM options via JAVA_OPTS at runtime
+ENV JAVA_OPTS="-Xms256m -Xmx512m"
+# Start the Spring Boot application
+ENTRYPOINT ["sh", "-c", "exec java $JAVA_OPTS -jar /app/app.jar"]
